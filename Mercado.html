@@ -1,0 +1,199 @@
+<html>
+		<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+<body>
+
+<div style="text-align:center"><img src="head.png" style="width:500px;height:125px;"></img></div>
+<p style="text-align:center;">La pagina web de noticias más extremadamente confiables</p><br>
+<div id="header">
+<ul class="nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="mercado.html">Mercado</a></li>
+<li><a href="acciones.html">Acciones</a></li>
+<li><a href="historial.html">Historial de noticias</a></li>
+<li><a href="Archivo.html">Archivo</a></li>
+</ul>
+</div>
+<br>
+<br>
+<br>
+<p style="text-align:center; font-size:200%">Mercado de valores</p>
+<img src="mercadoiron.png" style="width:480px;height:240px;"></img><br>
+<p id="H1">Precio lingote de hierro: compra $57.71 | venta $58.34</p>
+<img src="mercadogold.png" style="width:480px;height:240px;"></img><br>
+<p id="O1">Precio lingote de oro: compra $75.89 | venta $76.91</p>
+<img src="mercadodiamond.png" style="width:480px;height:240px;"></img><br>
+<p id="D1">Precio diamante: compra $81.41 | venta $83.67</p>
+<img src="mercadoemmerald.png" style="width:480px;height:240px;"></img><br>
+<p id="E1">Precio esmeralda: compra $73.61 | venta $74.23</p>
+<img src="mercadonetherite.png" style="width:480px;height:240px;"></img><br>
+<p id="N1">Precio Netherite: compra $73.61 | venta $74.23</p>
+<br>
+<br>
+<br>
+
+
+
+
+
+<div style="text-align:center"><h1>Más noticias</h1></div><br>
+<div style="text-align:center"><a href="Clickbait1.html"><img src="title1.png" style="width:240px;height:45px;"></img></a><a href="Clickbait4.html"><img src="title4.png" style="width:240px;height:45px;"></img></a><a href="Clickbait5.html"><img src="title5.png" style="width:240px;height:45px;"></img></a></div><br>
+<div style="text-align:center"><a href="Clickbait1.html"><img src="clickbait1.png" style="width:240px;height:120px;"></img></a><a href="Clickbait4.html"><img src="clickbait4.png" style="width:240px;height:120px;"></img></a><a href="Clickbait5.html"><img src="clickbait5.png" style="width:240px;height:120px;"></img></a></div><br>
+<br>
+
+<div>
+    <p style="float: left;"><img src="user.jpg" height="45px" width="45px" border="1px"></p>
+    <p>Serius_Investor comento:<br>Y yo que vendi mi diamante en septiembre....</p>
+</div><br>
+
+<div>
+    <p style="float: left;"><img src="user.jpg" height="45px" width="45px" border="1px"></p>
+    <p>Jurlian comento:<br>Estos precios son tremendos! a donde vamos a parar???</p>
+</div><br>
+
+<div>
+    <p style="float: left;"><img src="user.jpg" height="45px" width="45px" border="1px"></p>
+    <p>Trollmaster69 comento:<br>A este papu shadow no lo podemos tener como presidente, arruino minecraftia, miren la inflacion1!!!11!!1</p>
+</div><br>
+
+
+<div style="text-align:center"><font size="1" face="verdana" color="red" id="comment"></font></div><br>
+<div style="text-align:center"><input></input> <button onclick="myFunction()">Comentar</button></div>
+
+<script>
+function myFunction() {
+  document.getElementById("comment").innerHTML = "Los Comentarios no estan disponibles en esta version de chrome";
+}
+var mercado1 = document.getElementById("H1");
+var mercado2 = document.getElementById("O1");
+var mercado3 = document.getElementById("D1");
+var mercado4 = document.getElementById("E1");
+var mercado5 = document.getElementById("N1");
+var mercadoHE = 0
+var mercadoHC = 0
+var mercadoOE = 0
+var mercadoOC = 0
+var mercadoDE = 0
+var mercadoDC = 0
+var mercadoEE = 0
+var mercadoEC = 0
+var mercadoNE = 0
+var mercadoNC = 0
+var mercadoHEV = 0
+var mercadoHCV = 0
+var mercadoOEV = 0
+var mercadoOCV = 0
+var mercadoDEV = 0
+var mercadoDCV = 0
+var mercadoEEV = 0
+var mercadoECV = 0
+var mercadoNEV = 0
+var mercadoNCV = 0
+var dot ="."
+var befH = "Precio Hierro: Compra "
+var befO = "Precio Oro: Compra "
+var befD = "Precio Diamante: Compra "
+var befE = "Precio Esmeralda: Compra "
+var befN = "Precio Netherite: Compra "
+var venta = "|venta: "
+
+
+setInterval(market, 62); 
+
+function market() {
+var mercadoHE = Math.floor(Math.random() * (58 - 57 + 1) ) + 57
+var mercadoHC = Math.floor(Math.random() * (99 - 0 + 1) ) + 0
+
+
+var mercadoOE = Math.floor(Math.random() * (76 - 75 + 1) ) + 75
+var mercadoOC = Math.floor(Math.random() * (99 - 0 + 1) ) + 0
+
+
+var mercadoDE = Math.floor(Math.random() * (83 - 81 + 1) ) + 81
+var mercadoDC = Math.floor(Math.random() * (99 - 0 + 1) ) + 0
+
+
+var mercadoEE = Math.floor(Math.random() * (74 - 73 + 1) ) + 73
+var mercadoEC = Math.floor(Math.random() * (99 - 0 + 1) ) + 0
+
+
+var mercadoNE = Math.floor(Math.random() * (100 - 98 + 1) ) + 98
+var mercadoNC = Math.floor(Math.random() * (99 - 0 + 1) ) + 0
+
+var mercadoHEV = mercadoHE + 1
+var mercadoHCV = mercadoHE + 6
+var mercadoOEV = mercadoHE + 1
+var mercadoOCV = mercadoHE + 4
+var mercadoDEV = mercadoHE + 1
+var mercadoDCV = mercadoHE + 2
+var mercadoEEV = mercadoHE + 1
+var mercadoECV = mercadoHE + 7
+var mercadoNEV = mercadoHE + 1
+var mercadoNCV = mercadoHE + 3
+
+
+
+mercado1.innerHTML = befH+mercadoHE+dot+mercadoHC+venta+mercadoHEV+dot+mercadoHCV;
+mercado2.innerHTML = befO+mercadoOE+dot+mercadoOC+venta+mercadoOEV+dot+mercadoOCV;
+mercado3.innerHTML = befD+mercadoDE+dot+mercadoDC+venta+mercadoDEV+dot+mercadoDCV;
+mercado4.innerHTML = befE+mercadoEE+dot+mercadoEC+venta+mercadoEEV+dot+mercadoECV;
+mercado5.innerHTML = befN+mercadoNE+dot+mercadoNC+venta+mercadoNEV+dot+mercadoNCV;
+}
+
+
+</script>
+
+©Papercube 2015-2020
+</body>
+</html>
